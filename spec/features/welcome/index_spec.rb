@@ -18,7 +18,7 @@ RSpec.describe 'Welcome Page' do
     )
   end
 
-  it 'visits the welcome page, happy path', :vcr do
+  it 'visits the welcome page, happy path' do
     visit root_path
 
     expect(page).to have_button('Log in with Google')

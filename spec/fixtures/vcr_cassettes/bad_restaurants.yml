@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=badrequest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Dec 2022 06:43:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - d4d749b3-f7b0-4879-b67e-e211ab123410
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24960'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '1.747'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4Np9IOZ2xsKoowi4XHA8IoNjAkxCu%2FQy71cNuxU5aNm0urHcpfA0fjmLnXeKSGOlfrx%2FSJOXcMLaGXPjOJ%2BrLXxsNIJYqCoXaSo%2Bds8GYYKSFLER6vusedxmezjAtJk9NZ1AhCL5048bVHDdglYuqez2bwk%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7808525fbb241f26-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Wed, 28 Dec 2022 06:43:29 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude&limit=3&longitude&sort_by=rating
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <yelp_api_key>
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '111'
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-54c89576fb-lsrlr; site=public_api_v3
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - e8e25d9386864d1d
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-131-202-uswest2bprod
+      X-Extlb:
+      - 10-69-131-202-uswest2bprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Dec 2022 06:43:29 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8257-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "Please specify
+        a location or a latitude and longitude"}}'
+  recorded_at: Wed, 28 Dec 2022 06:43:29 GMT
+recorded_with: VCR 6.1.0

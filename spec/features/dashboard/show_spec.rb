@@ -23,7 +23,7 @@ RSpec.describe 'User Dashboard Page' do
     )
   end
 
-  it 'visits the show page and logs out, happy path', :vcr do
+  it 'visits the show page and logs out, happy path' do
     visit root_path
 
     click_button('Log in with Google')

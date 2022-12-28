@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://skedaddle-turing-be.herokuapp.com/api/v1/parks?search=Qweporiuqwpoeruqpweiru
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Qweporiuqwpoeruqpweiru
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.5.2
+      - Faraday v2.7.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,39 +18,159 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
       Date:
-      - Tue, 20 Sep 2022 18:50:20 GMT
-      Connection:
-      - keep-alive
+      - Wed, 28 Dec 2022 07:10:47 GMT
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3b19a7df-3326-4736-8c28-7362e71249af
-      X-Runtime:
-      - '0.328647'
+      - application/json
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - 66526009-d5c7-4ab6-a60b-77b9e132c079
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24955'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '1.382'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wAWnTK2V1Mpk1MK%2BE2q3L4mVLkLN1XO6B2%2BaSr8rC0oEXN9fEEyx4QrU1xwkQX8%2BBGhM0TBNvlADtfraSvF3Pd4XehzlppGIbefCuwzqhznhzLffEYIVnylFpfKMOpECR5Af1hFuTKvxQX3KcKueQ3IVoyE%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 78087a5f3a082905-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
-      encoding: UTF-8
-      string: "[]"
-  recorded_at: Tue, 20 Sep 2022 18:50:20 GMT
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Wed, 28 Dec 2022 07:10:47 GMT
 - request:
     method: get
-    uri: https://skedaddle-turing-be.herokuapp.com/api/v1/restaurants?search=Qweporiuqwpoeruqpweiru
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=badrequest&limit=3&lon=badrequest&radius=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Key:
+      - "<trail_api_key>"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 28 Dec 2022 07:10:47 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '122'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
+      Last-Modified:
+      - Wed, 28 Dec 2022 07:10:47 GMT
+      Expires:
+      - Thu, 29 Dec 2022 07:10:47 GMT
+      Link:
+      - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
+      Etag:
+      - '"177f8af5bdc780abe7407a9cae90efcd"'
+      Cf-Ray:
+      - 78087a6b18be281c-SEA
+      Cf-Cache-Status:
+      - BYPASS
+      Pragma:
+      - no-cache
+      Cf-Edge-Cache:
+      - cache,platform=wordpress
+      Set-Cookie:
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE12020627047BD9FDB505E899150AF361;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE12020627047BD9FDB505E899150AF361;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      X-Robots-Tag:
+      - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=94tx5mFjy3eV8CQbh7jpbYZa1ql6rMKC9%2BcIoHG2Xf%2F0julV4O1ZJN81ud%2BNy4qoKSIaZqgmUwajxyavgKXckdRSMl0Bldarz0XeN3Nw8KJP18bHuBdUgIlyiIA13oEoyk50cD%2Fm"}],"group":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - W3 Total Cache/2.2.9
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Apo-Via:
+      - origin,qs
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages, Link
+      Access-Control-Allow-Headers:
+      - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Allow:
+      - GET
+      X-Ratelimit-Map-Data-Limit:
+      - '10'
+      X-Ratelimit-Map-Data-Remaining:
+      - '10'
+      X-Ratelimit-Map-Data-Reset:
+      - '73028'
+      X-Ratelimit-Regular-Requests-Limit:
+      - '500'
+      X-Ratelimit-Regular-Requests-Remaining:
+      - '500'
+      X-Ratelimit-Regular-Requests-Reset:
+      - '73028'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-west-2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"invalid_input","message":"For geo search, lat, lon, and radius
+        must all be non-zero.","data":{"status":404}}'
+  recorded_at: Wed, 28 Dec 2022 07:10:47 GMT
+- request:
+    method: get
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Qweporiuqwpoeruqpweiru
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.5.2
+      - Faraday v2.7.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -60,28 +180,111 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
       Date:
-      - Tue, 20 Sep 2022 18:50:20 GMT
-      Connection:
-      - keep-alive
+      - Wed, 28 Dec 2022 07:10:49 GMT
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - ab72697a-1f6c-4c05-97ae-9b15df6fd50a
-      X-Runtime:
-      - '0.138146'
+      - application/json
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - f752e060-90c9-4bdc-894e-5a6316775864
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24954'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '2.036'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kH1LZ1BUhsGJ1R7Ich6%2FKM3Aw6xh0Fh87ExVy1D3gPSxLKUlxQBen9gh1Etkm1i0y34hETwEPd3jrSjtw6vqkbrIlj5b8A3ny%2BOovh5xSA7pm70GswOs%2FDJZJ4wjf9qzGAnB6W%2F7tTfz3W5Wsn6nOJt5qOg%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 78087a6d3d2b8ea8-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Wed, 28 Dec 2022 07:10:49 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude&limit=3&longitude&sort_by=rating
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <yelp_api_key>
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '111'
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--uswest2-54c89576fb-r7ggm; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 67467cc9a06a3fc5
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-102-251-uswest2aprod
+      X-Extlb:
+      - 10-69-102-251-uswest2aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Dec 2022 07:10:50 GMT
       Via:
-      - 1.1 vegur
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8245-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
     body:
       encoding: UTF-8
-      string: "[]"
-  recorded_at: Tue, 20 Sep 2022 18:50:21 GMT
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "Please specify
+        a location or a latitude and longitude"}}'
+  recorded_at: Wed, 28 Dec 2022 07:10:50 GMT
 recorded_with: VCR 6.1.0

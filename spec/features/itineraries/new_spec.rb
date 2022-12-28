@@ -20,6 +20,7 @@ RSpec.describe 'New Itinerary' do
 
     click_button('Log in with Google')
   end
+
   it 'has search location and parks/restaurants displayed', vcr: 'denver_search' do
     expect(current_path).to eq(dashboard_path)
     visit '/itineraries/new?search=denver'

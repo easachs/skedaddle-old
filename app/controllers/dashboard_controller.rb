@@ -7,9 +7,9 @@ class DashboardController < ApplicationController
   private
 
   def not_logged_in
-    if current_user == (nil)
-      redirect_to root_path
-      flash[:error] = 'Must be logged in!'
-    end
+    return unless current_user == (nil)
+
+    redirect_to root_path
+    flash[:error] = 'Must be logged in!'
   end
 end
