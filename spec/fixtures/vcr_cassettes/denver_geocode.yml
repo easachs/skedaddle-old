@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 06:43:26 GMT
+      - Wed, 28 Dec 2022 06:43:21 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - cf433fb0-ee52-4abe-86d4-3244d8dd72fd
+      - 5dc09a39-de62-41a5-8d5a-d5424455fa05
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,21 +45,21 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24961'
+      - '24965'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '1.131'
+      - '0.256'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Esc3YyGKxn7DZSL6SWgIKF8UhmJjNUi8K1kXzqbByNjAvxLCPuakTkgF4atGvwUZSCDqlWAzmfJ%2BMTn%2FQZBECXDI7xZjh9HW4Gqlqp4QuU6G3hHdnpYn44XyOgEwxPArcDaXCpT94CrBPRAgXUpigozTGBc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xhxgw5kTHC5KNb4tWdGGY0UJgqjnJvz4h76meRiuJG63uGukOTDJAVxyL5RglBad4QF7bZBRai7dD65QstINu5Kz%2Fa6N1owxQMUnrgrtQ5xSyIkozkeAJNrBxR9e0YCCH8MH%2BzdzvY0h7X7tmCrjMaT1R%2FM%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78085254385bc7a9-DEN
+      - 780852388d99291b-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -93,102 +93,5 @@ http_interactions:
         Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
         America","label":"Denver, NS, Canada","map_url":"https:\/\/map.positionstack.com\/export\/embed.html?bbox=-62.12992,45.317,-62.08992,45.357\u0026layer=mapnik\u0026marker=45.337,-62.10992"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
         VIC, Australia","map_url":"https:\/\/map.positionstack.com\/export\/embed.html?bbox=144.28,-37.28667,144.32,-37.24667\u0026layer=mapnik\u0026marker=-37.26667,144.3"}]}'
-  recorded_at: Wed, 28 Dec 2022 06:43:26 GMT
-- request:
-    method: get
-    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude=39.740959&limit=3&longitude=-104.985798&sort_by=rating
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - Bearer <yelp_api_key>
-      User-Agent:
-      - Faraday v2.7.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Server:
-      - envoy
-      X-B3-Sampled:
-      - '0'
-      X-Zipkin-Id:
-      - ad0a2a09efffbf14
-      Ratelimit-Dailylimit:
-      - '5000'
-      Ratelimit-Remaining:
-      - '4999'
-      X-Routing-Service:
-      - routing-main--uswest2-54c89576fb-z9ck8; site=public_api_v3
-      Ratelimit-Resettime:
-      - '2022-12-29T00:00:00+00:00'
-      X-Cloudmap:
-      - routing_uswest2
-      X-Mode:
-      - ro
-      X-Proxied:
-      - 10-69-131-202-uswest2bprod
-      X-Extlb:
-      - 10-69-131-202-uswest2bprod
-      Cache-Control:
-      - max-age=0, no-store, private, no-transform
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Wed, 28 Dec 2022 06:43:27 GMT
-      Via:
-      - 1.1 varnish
-      X-Served-By:
-      - cache-den8255-DEN
-      X-Cache:
-      - MISS
-      X-Cache-Hits:
-      - '0'
-      Vary:
-      - Accept-Encoding
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: '{"businesses": [{"id": "hFyklxnjjMxS2uAcjGlrow", "alias": "the-savage-beet-denver",
-        "name": "The Savage Beet", "image_url": "", "is_closed": false, "url": "https://www.yelp.com/biz/the-savage-beet-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 5, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
-        {"alias": "vegan", "title": "Vegan"}], "rating": 5.0, "coordinates": {"latitude":
-        39.758766055023614, "longitude": -104.96338765717817}, "transactions": [],
-        "location": {"address1": "", "address2": "", "address3": null, "city": "Denver",
-        "zip_code": "80205", "country": "US", "state": "CO", "display_address": ["Denver,
-        CO 80205"]}, "phone": "+17204218242", "display_phone": "(720) 421-8242", "distance":
-        2755.2214371593}, {"id": "jk7hrDdCbWuJ8rIQ8Bb5Fg", "alias": "your-coffee-guy-littleton",
-        "name": "Your Coffee Guy", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/4ECH4UECq92hrBrvDy1Whg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/your-coffee-guy-littleton?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 7, "categories": [{"alias": "coffee", "title": "Coffee & Tea"},
-        {"alias": "foodtrucks", "title": "Food Trucks"}], "rating": 5.0, "coordinates":
-        {"latitude": 39.6065101623535, "longitude": -105.106483459473}, "transactions":
-        [], "location": {"address1": "5980 S Jellison St", "address2": "Ste B", "address3":
-        "", "city": "Littleton", "zip_code": "80123", "country": "US", "state": "CO",
-        "display_address": ["5980 S Jellison St", "Ste B", "Littleton, CO 80123"]},
-        "phone": "+17202204007", "display_phone": "(720) 220-4007", "distance": 18172.23973273907},
-        {"id": "YmUtcdHhIC5cBujKytB_9A", "alias": "taco-block-wheat-ridge", "name":
-        "Taco Block", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Si5Tq0KP25hob5pd8dXxiQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/taco-block-wheat-ridge?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 5, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
-        {"alias": "tacos", "title": "Tacos"}, {"alias": "catering", "title": "Caterers"}],
-        "rating": 5.0, "coordinates": {"latitude": 39.7769414, "longitude": -105.0707654},
-        "transactions": [], "price": "$", "location": {"address1": "6551 W 44th Ave",
-        "address2": null, "address3": "", "city": "Wheat Ridge", "zip_code": "80033",
-        "country": "US", "state": "CO", "display_address": ["6551 W 44th Ave", "Wheat
-        Ridge, CO 80033"]}, "phone": "+17202615080", "display_phone": "(720) 261-5080",
-        "distance": 8292.161094495026}], "total": 1600, "region": {"center": {"longitude":
-        -104.985798, "latitude": 39.740959}}}'
-  recorded_at: Wed, 28 Dec 2022 06:43:27 GMT
+  recorded_at: Wed, 28 Dec 2022 06:43:21 GMT
 recorded_with: VCR 6.1.0
