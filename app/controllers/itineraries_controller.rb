@@ -24,12 +24,12 @@ class ItinerariesController < ApplicationController
 
   def create
     itinerary = current_user.itineraries.new(itinerary_params)
-    if itinerary.save
-      @parks.each { |park| itinerary.parks.create!(park) }
-      @restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant) }
-      flash[:success] = 'New itinerary saved.'
-      redirect_to itinerary_path(itinerary.id)
-    end
+    return unless itinerary.save
+
+    @parks.each { |park| itinerary.parks.create!(park) }
+    @restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant) }
+    flash[:success] = 'New itinerary saved.'
+    redirect_to itinerary_path(itinerary.id)
   end
 
   def destroy
@@ -52,17 +52,17 @@ class ItinerariesController < ApplicationController
   end
 
   def find_parks
-    @parks = ParksService.parks_near(@search)
+    @parks = ParksFacade.parks_near(@search)
   end
 
   def find_restaurants
-    @restaurants = RestaurantsService.restaurants_near(@search)
+    @restaurants = RestaurantsFacade.restaurants_near(@search)
   end
 
   def not_logged_in
-    if current_user == (nil)
-      redirect_to root_path
-      flash[:error] = 'Must be logged in!'
-    end
+    return unless current_user == (nil)
+
+    redirect_to root_path
+    flash[:error] = 'Must be logged in!'
   end
 end
