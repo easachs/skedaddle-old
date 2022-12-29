@@ -16,7 +16,7 @@ class ItinerariesController < ApplicationController
     if params[:search] == ('') || nil
       redirect_to '/dashboard'
       flash[:error] = 'Search cannot be empty!'
-    elsif @parks.empty? && @restaurants.empty?
+    elsif @found_parks.empty? && @found_restaurants.empty?
       redirect_to '/dashboard'
       flash[:error] = 'No results found!'
     end
@@ -26,8 +26,8 @@ class ItinerariesController < ApplicationController
     itinerary = current_user.itineraries.new(itinerary_params)
     return unless itinerary.save
 
-    @parks.each { |park| itinerary.parks.create!(park) }
-    @restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant) }
+    @found_parks.each { |park| itinerary.parks.create!(park.serialized) }
+    @found_restaurants.each { |restaurant| itinerary.restaurants.create!(restaurant.serialized) }
     flash[:success] = 'New itinerary saved.'
     redirect_to itinerary_path(itinerary.id)
   end
@@ -52,11 +52,11 @@ class ItinerariesController < ApplicationController
   end
 
   def find_parks
-    @parks = ParksFacade.parks_near(@search)
+    @found_parks = ParksFacade.parks_near(@search)
   end
 
   def find_restaurants
-    @restaurants = RestaurantsFacade.restaurants_near(@search)
+    @found_restaurants = RestaurantsFacade.restaurants_near(@search)
   end
 
   def not_logged_in

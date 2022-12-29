@@ -3,9 +3,9 @@
 class SessionsController < ApplicationController
   def omniauth
     user = User.from_omniauth(request.env['omniauth.auth'])
-    return unless user.valid? # video added check for authorization token here instead
+    return unless user.valid?
 
-    session[:user_id] = user.id # video set session equal to authorization token from google (did not reference any object)
+    session[:user_id] = user.id
     redirect_to dashboard_url
   end
 
