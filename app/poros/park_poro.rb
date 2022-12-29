@@ -30,4 +30,20 @@ class ParkPoro
   def nil_check(attribute)
     ['', nil].include?(attribute) ? 'Not found' : attribute
   end
+
+  def serialized
+    {
+      name: @name,
+      city: @city,
+      state: @state,
+      country: @country,
+      description: @description,
+      directions: @directions,
+      lat: @lat,
+      lon: @lon,
+      activities: @activities,
+      url: @url,
+      thumbnail: @thumbnail
+    }
+  end
 end

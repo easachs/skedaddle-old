@@ -24,4 +24,17 @@ class RestaurantPoro
   def nil_check(attribute)
     ['', nil].include?(attribute) ? 'Not found' : attribute
   end
+
+  def serialized
+    {
+      name: @name,
+      rating: @rating,
+      price: @price,
+      image_url: @image_url,
+      url: @url,
+      categories: @categories,
+      address: @address,
+      phone: @phone
+    }
+  end
 end
