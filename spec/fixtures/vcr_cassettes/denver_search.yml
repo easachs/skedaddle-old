@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:37 GMT
+      - Fri, 30 Dec 2022 23:21:52 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - ac4b8bd9-a28c-4bc7-bb29-7e4e8a4d9d6f
+      - 61f3eadf-f2f3-4879-adbc-2e245ef30dc6
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,21 +45,21 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24959'
+      - '24928'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '0.311'
+      - '0.368'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QH9XZAGdEIvx0yDPMwG%2FU3ane2%2BCzOUgUCYAozHBM3NmjDMA42mZdE1wnibovt4aUUmu%2BJl96s%2FwmjCBbQdsz7UwnYDN1T3GIPfrOohUHYjEEEwvsonoyjAJd328JUq5RT%2BOiYFWXiJ9HkTXqqe0j4F0uH8%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kU8S1yfOGFi0FL3w%2BX3KKHD4bnfY5Pb5%2BTeV26xThu4gvVetQLAfhJ82KQOW7Zlwp4es7x7vSxzGEKRsbGa0WEKsZSuq5XL3ZXMpgRSz3v6pVkNjr3NePLkvEJIXgazs7%2BBHDorP%2FgzIBp1Hq0581Msp0Sc%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78087a2c1bb51f25-DEN
+      - 781e83a58e3e8eb0-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -93,7 +93,7 @@ http_interactions:
         Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
         America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
         VIC, Australia"}]}'
-  recorded_at: Wed, 28 Dec 2022 07:10:37 GMT
+  recorded_at: Fri, 30 Dec 2022 23:21:52 GMT
 - request:
     method: get
     uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=39.740959&limit=3&lon=-104.985798&radius=100
@@ -115,7 +115,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:38 GMT
+      - Fri, 30 Dec 2022 23:21:53 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -125,15 +125,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Wed, 28 Dec 2022 07:10:38 GMT
+      - Fri, 30 Dec 2022 23:21:53 GMT
       Expires:
-      - Thu, 29 Dec 2022 07:10:38 GMT
+      - Sat, 31 Dec 2022 23:21:53 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
       - '"12a6388f63c28566420174e7227e4b0d"'
       Cf-Ray:
-      - 78087a31b92ac680-SEA
+      - 781e83aae9f2ec60-SEA
       Cf-Cache-Status:
       - BYPASS
       Pragma:
@@ -141,14 +141,14 @@ http_interactions:
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE12020627047BD9FDB505E899150AF361;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE12020627047BD9FDB505E899150AF361;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE5CA9D5B1C494AE221DD98AEFA8F33B67B;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE5CA9D5B1C494AE221DD98AEFA8F33B67B;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
       X-Robots-Tag:
       - noindex
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tT%2FHHq%2FxjJoUeNNO5F%2F906NVDU2UsgaUEukBOxdqQg%2BnwLgEhmPZprxVCP5MpHJkKXB33pfcZN9s5vffEd2LxAhGfzWnqrc0i3akH6g59sV4zgbDR%2BeIiGzb1shKA8928bsGAWjb"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i0%2F07YXISRBoYgYywjd0YyJ7NZeWsX2fF8SJ016MVncdLshmxJAwyb5BffHjt8czuBxewyV8Vgo%2FFT3L8mwf3g07TBwaAWmOfN9orf6y%2B0GqOT42RWZVcysfl4d2TB2giayw9m4P"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -172,13 +172,13 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '73037'
+      - '14762'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '73037'
+      - '14762'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -250,7 +250,7 @@ http_interactions:
         is a nice change of pace.  The terrain is kinda sandy though so watch out.","name":"Black
         Forest Regional Park","rank":"0","rating":"2.44","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1157406070.jpg","activity_type":"5","activity_type_name":"mountain
         biking","attribs":{"length":"4","nightride":"null"},"place_activity_id":"936397"}}}}'
-  recorded_at: Wed, 28 Dec 2022 07:10:38 GMT
+  recorded_at: Fri, 30 Dec 2022 23:21:53 GMT
 - request:
     method: get
     uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Denver
@@ -270,7 +270,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:39 GMT
+      - Fri, 30 Dec 2022 23:21:53 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -286,7 +286,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - f31515fd-26c6-4269-86e8-e9e12bd447c2
+      - 0e376ee6-d894-4a2c-851b-4a67228288bb
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -296,21 +296,21 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24958'
+      - '24927'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '0.202'
+      - '0.165'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=I382OWTtgBx2YO%2F1oMUGSCYg%2B8PqoPFgUXQjpDxkn53IM9P7815Z4mbfX8ivDvYwz7%2FQH5LUeLT5ECG6G0MHfqPC8os3a%2BoWvIYDuZ8a8mdTT8Fe0k4ESCdzQbO6KvJv9p0p56bzXn7ZqnGLHKMHxqcjKWs%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=XcaaIEwL4KlEdYmJ4D6CRbkQYr2AEpMBy3BYm0ghp15%2BB19g6NX%2BNttNmls4KG2B%2FEhxCFcbJzipejCN1roawAELBMio3Rg1Gk%2B%2B0hJgZmlVnC7wWGGfhVUlx4qtRqISMnlKjQlvZjf%2FJq02gKooLqw1ZQ0%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78087a340a9c1f34-DEN
+      - 781e83ae9fb82723-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -344,7 +344,7 @@ http_interactions:
         Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
         America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
         VIC, Australia"}]}'
-  recorded_at: Wed, 28 Dec 2022 07:10:39 GMT
+  recorded_at: Fri, 30 Dec 2022 23:21:53 GMT
 - request:
     method: get
     uri: https://api.yelp.com/v3/businesses/search?category=food&latitude=39.740959&limit=3&longitude=-104.985798&sort_by=rating
@@ -369,38 +369,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Routing-Service:
-      - routing-main--uswest2-54c89576fb-qclvf; site=public_api_v3
-      Server:
-      - envoy
-      Ratelimit-Remaining:
-      - '4997'
-      Ratelimit-Resettime:
-      - '2022-12-29T00:00:00+00:00'
-      X-B3-Sampled:
-      - '0'
-      X-Zipkin-Id:
-      - f90a0b936473a89f
       Ratelimit-Dailylimit:
       - '5000'
+      Ratelimit-Remaining:
+      - '5000'
+      Ratelimit-Resettime:
+      - '2022-12-31T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--uswest2-54c89576fb-wglkt; site=public_api_v3
+      X-Zipkin-Id:
+      - 3e50bf61fa8190df
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-114-190-uswest2aprod
+      - 10-69-102-251-uswest2aprod
       X-Extlb:
-      - 10-69-114-190-uswest2aprod
+      - 10-69-102-251-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 28 Dec 2022 07:10:39 GMT
+      - Fri, 30 Dec 2022 23:21:54 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8238-DEN
+      - cache-den8248-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -441,5 +441,437 @@ http_interactions:
         Ridge, CO 80033"]}, "phone": "+17202615080", "display_phone": "(720) 261-5080",
         "distance": 8292.161094495026}], "total": 1600, "region": {"center": {"longitude":
         -104.985798, "latitude": 39.740959}}}'
-  recorded_at: Wed, 28 Dec 2022 07:10:39 GMT
+  recorded_at: Fri, 30 Dec 2022 23:21:54 GMT
+- request:
+    method: get
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 30 Dec 2022 23:21:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - a4f418a8-ea2c-4a9d-ac27-11fc7620cd15
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24926'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.262'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VAtTQArY9Ii5BCxCU7ZFoH09MUsumyIVVJtyOojOhd83KX7rHu2KlPtG68GhUkEfiBi7D0T3UxAG9jAOoCH8FFLQ8nbNhw6n4MaU134qTwPAS161SNFKe88MbqcEbQ6ThqUHhjGKOfs%2FRWO%2BekLUE50A1Wg%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 781e83b409911f46-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"latitude":39.740959,"longitude":-104.985798,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        CO, USA"},{"latitude":39.741107,"longitude":-104.98702,"type":"county","name":"Denver
+        County","number":null,"postal_code":null,"street":null,"confidence":0.4,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":null,"administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver County,
+        CO, USA"},{"latitude":39.19312,"longitude":-83.05574,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Ross
+        County","locality":"Denver","administrative_area":"Huntington Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        OH, USA"},{"latitude":36.39257,"longitude":-93.3149,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Arkansas","region_code":"AR","county":"Carroll
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        AR, USA"},{"latitude":39.75647,"longitude":-80.55536,"type":"locality","name":"Bellton","number":null,"postal_code":null,"street":null,"confidence":1,"region":"West
+        Virginia","region_code":"WV","county":"Marshall County","locality":"Bellton","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Bellton,
+        WV, USA"},{"latitude":40.2906,"longitude":-91.10708,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Illinois","region_code":"IL","county":"Hancock
+        County","locality":"Denver","administrative_area":"Harmony Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        IL, USA"},{"latitude":33.19151,"longitude":-85.17439,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Georgia","region_code":"GA","county":"Heard
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        GA, USA"},{"latitude":36.047,"longitude":-87.92086,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Tennessee","region_code":"TN","county":"Humphreys
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        TN, USA"},{"latitude":45.337,"longitude":-62.10992,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Nova
+        Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
+        America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
+        VIC, Australia"}]}'
+  recorded_at: Fri, 30 Dec 2022 23:21:54 GMT
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=39.740959&limit=3&lon=-104.985798&radius=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Key:
+      - "<trail_api_key>"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 30 Dec 2022 23:21:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1596'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
+      Last-Modified:
+      - Fri, 30 Dec 2022 23:21:53 GMT
+      Expires:
+      - Sat, 31 Dec 2022 23:21:53 GMT
+      Link:
+      - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
+      Etag:
+      - '"12a6388f63c28566420174e7227e4b0d"'
+      Cf-Ray:
+      - 781e83b79bfec49b-SEA
+      Pragma:
+      - no-cache
+      Cf-Edge-Cache:
+      - cache,platform=wordpress
+      Set-Cookie:
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE5CA9D5B1C494AE221DD98AEFA8F33B67B;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE5CA9D5B1C494AE221DD98AEFA8F33B67B;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      Vary:
+      - Accept-Encoding
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PMKcNq%2FJ2%2Bw1kTCJGnbiqSpQvhoImXnIlVoNwQU6KmjrBkIp3yyyb9nciGk8Crr0hDfaFD2ihNUNqtWxBvzJH1SMV8X9I%2BO0BHE08QUSeHyHccTc2CjyX%2BW%2FHpA8eYibwHNXhmm6"}],"group":"cf-nel","max_age":604800}'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - W3 Total Cache/2.2.9
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Cf-Apo-Via:
+      - origin,qs
+      Cf-Cache-Status:
+      - BYPASS
+      X-Ratelimit-Map-Data-Limit:
+      - '10'
+      X-Ratelimit-Map-Data-Remaining:
+      - '10'
+      X-Ratelimit-Map-Data-Reset:
+      - '14760'
+      X-Ratelimit-Regular-Requests-Limit:
+      - '500'
+      X-Ratelimit-Regular-Requests-Remaining:
+      - '500'
+      X-Ratelimit-Regular-Requests-Reset:
+      - '14760'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-west-2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"684":{"name":"Apex Park","city":"Golden","state":"Colorado","country":"United
+        States","description":"From the Heritage Square parking lot, take Apex trail
+        west into Apex gulch. Take a right onto the first trail that branches off
+        about a mile up. This is the Pick n'' Sledgetrail. Follow this for 0.9 miles
+        until it branches with the Grubstakeloop. Take a right onto Grubstake and
+        follow it as it winds aroundthe mountain and you start going south again.
+        When you see the Sluiceboxtrail, take it down to Apex trail. Once back on
+        Apex, take a rightand go up the gulch. Once you get to the Enchanted forest
+        trailhead,you have 2 options. This point is the bottom of a loop, so you caneither
+        keep going up Apex and decend the Enchanted Forest, or doit in reverse. Either
+        way there are steep uphills and fun downhills.  Once you finish the loop,
+        get back on Apex and decend to the parking lot.","directions":"From the I-25
+        and 6th Ave. intersection in Denver, go west on 6th. As you get close to the
+        foothills, you will drive under I-70.After the underpass, take your first
+        left at the stoplight.You will be turning onto Hwy. 40. Drive on 40 for about
+        a mile.  Pull into the Heritage Square parking lot on your right, and park
+        on the north side next to the trailhead.","lat":"39.7165","lon":"-105.2092","parent_id":"0","place_id":"684","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=3","length":"8","description":"From
+        the Heritage Square parking lot, take Apex trail west into Apex gulch. Take
+        a right onto the first trail that branches off about a mile up. This is the
+        Pick n'' Sledgetrail. Follow this for 0.9 miles until it branches with the
+        Grubstakeloop. Take a right onto Grubstake and follow it as it winds aroundthe
+        mountain and you start going south again. When you see the Sluiceboxtrail,
+        take it down to Apex trail. Once back on Apex, take a rightand go up the gulch.
+        Once you get to the Enchanted forest trailhead,you have 2 options. This point
+        is the bottom of a loop, so you caneither keep going up Apex and decend the
+        Enchanted Forest, or doit in reverse. Either way there are steep uphills and
+        fun downhills.  Once you finish the loop, get back on Apex and decend to the
+        parking lot.","name":"Apex Park","rank":"0","rating":"4.27","thumbnail":"http:\/\/images.singletracks.com\/2014\/10\/G0057937.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"8","nightride":"1"},"place_activity_id":"936395"}}},"685":{"name":"Bear
+        Creek Regional Park","city":"Colorado Springs","state":"Colorado","country":"United
+        States","description":"This place has some good hills and wide trails. Alot
+        of hikers and joggers use these trails, not to mention the people with the
+        dogs. There is some singletrack here that is closed to bikes but is well worth
+        the ride if you are feeling gnarley. Use these trails to connect with Gold
+        Camp Rd. and Captain Jack''s for a nice long ride.&lt;BR&gt;&lt;BR&gt;","directions":"From
+        I-25, exit at US 24 West, Cimmaron St. Head west. At the second stoplight
+        (21st St.), turn left.The trail is on the right after the big hill. Parking
+        is available on the right.","lat":"38.8251","lon":"-104.8597","parent_id":"0","place_id":"685","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=4","length":"6","description":"This
+        place has some good hills and wide trails. Alot of hikers and joggers use
+        these trails, not to mention the people with the dogs. There is some singletrack
+        here that is closed to bikes but is well worth the ride if you are feeling
+        gnarley. Use these trails to connect with Gold Camp Rd. and Captain Jack''s
+        for a nice long ride.&lt;BR&gt;&lt;BR&gt;","name":"Bear Creek Regional Park","rank":"0","rating":"2.83","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1125722874.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"6","nightride":"null"},"place_activity_id":"936396"}}},"686":{"name":"Black
+        Forest Regional Park","city":"Black Forest","state":"Colorado","country":"United
+        States","description":"This place doesn''t have a whole lot to offer but it
+        is something different at least.  They do hold a race here once a year, usually
+        in May.  The park pretty much sits on a hill so you''ll ride up from the parking
+        lot no matter which way you go.  The terrain here is rolling and there are
+        lots of trees so that is a nice change of pace.  The terrain is kinda sandy
+        though so watch out.","directions":"From Colorado Springs, take Black Forest
+        Road north into the Black Forest.  Turn left onto Shoup Rd. at the second
+        light you see.  The park is on the right about 2 miles down Shoup.","lat":"39.0136","lon":"-104.7379","parent_id":"0","place_id":"686","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=5","length":"4","description":"This
+        place doesn''t have a whole lot to offer but it is something different at
+        least.  They do hold a race here once a year, usually in May.  The park pretty
+        much sits on a hill so you''ll ride up from the parking lot no matter which
+        way you go.  The terrain here is rolling and there are lots of trees so that
+        is a nice change of pace.  The terrain is kinda sandy though so watch out.","name":"Black
+        Forest Regional Park","rank":"0","rating":"2.44","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1157406070.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"4","nightride":"null"},"place_activity_id":"936397"}}}}'
+  recorded_at: Fri, 30 Dec 2022 23:21:55 GMT
+- request:
+    method: get
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 30 Dec 2022 23:21:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - 58aedae5-da15-411f-93cd-04206e4c7385
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24925'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.145'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FX7H8EUCeJ%2F5fTXvPUEYU8KjzsIcjplBEs3hKbwtbhPasGf3UxFVFQBBV6qd4gt2hkDM0DU%2BznJ5scVYXTTbSJu6%2Blqvxmx82%2BPdOaplCZXDZKIOinlvZu9pV6KTwI12HbRjH9Xje342qXbetbHzIu7VZxA%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 781e83bb3958271b-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"latitude":39.740959,"longitude":-104.985798,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        CO, USA"},{"latitude":39.741107,"longitude":-104.98702,"type":"county","name":"Denver
+        County","number":null,"postal_code":null,"street":null,"confidence":0.4,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":null,"administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver County,
+        CO, USA"},{"latitude":39.19312,"longitude":-83.05574,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Ross
+        County","locality":"Denver","administrative_area":"Huntington Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        OH, USA"},{"latitude":36.39257,"longitude":-93.3149,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Arkansas","region_code":"AR","county":"Carroll
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        AR, USA"},{"latitude":39.75647,"longitude":-80.55536,"type":"locality","name":"Bellton","number":null,"postal_code":null,"street":null,"confidence":1,"region":"West
+        Virginia","region_code":"WV","county":"Marshall County","locality":"Bellton","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Bellton,
+        WV, USA"},{"latitude":40.2906,"longitude":-91.10708,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Illinois","region_code":"IL","county":"Hancock
+        County","locality":"Denver","administrative_area":"Harmony Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        IL, USA"},{"latitude":33.19151,"longitude":-85.17439,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Georgia","region_code":"GA","county":"Heard
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        GA, USA"},{"latitude":36.047,"longitude":-87.92086,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Tennessee","region_code":"TN","county":"Humphreys
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        TN, USA"},{"latitude":45.337,"longitude":-62.10992,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Nova
+        Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
+        America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
+        VIC, Australia"}]}'
+  recorded_at: Fri, 30 Dec 2022 23:21:55 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude=39.740959&limit=3&longitude=-104.985798&sort_by=rating
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <yelp_api_key>
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4999'
+      X-Zipkin-Id:
+      - 04bf5ffbcbf5661f
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--uswest2-54c89576fb-472hj; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-12-31T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-99-143-uswest2aprod
+      X-Extlb:
+      - 10-69-99-143-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 30 Dec 2022 23:21:56 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8245-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "hFyklxnjjMxS2uAcjGlrow", "alias": "the-savage-beet-denver",
+        "name": "The Savage Beet", "image_url": "", "is_closed": false, "url": "https://www.yelp.com/biz/the-savage-beet-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 5, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
+        {"alias": "vegan", "title": "Vegan"}], "rating": 5.0, "coordinates": {"latitude":
+        39.758766055023614, "longitude": -104.96338765717817}, "transactions": [],
+        "location": {"address1": "", "address2": "", "address3": null, "city": "Denver",
+        "zip_code": "80205", "country": "US", "state": "CO", "display_address": ["Denver,
+        CO 80205"]}, "phone": "+17204218242", "display_phone": "(720) 421-8242", "distance":
+        2755.2214371593}, {"id": "jk7hrDdCbWuJ8rIQ8Bb5Fg", "alias": "your-coffee-guy-littleton",
+        "name": "Your Coffee Guy", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/4ECH4UECq92hrBrvDy1Whg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/your-coffee-guy-littleton?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 7, "categories": [{"alias": "coffee", "title": "Coffee & Tea"},
+        {"alias": "foodtrucks", "title": "Food Trucks"}], "rating": 5.0, "coordinates":
+        {"latitude": 39.6065101623535, "longitude": -105.106483459473}, "transactions":
+        [], "location": {"address1": "5980 S Jellison St", "address2": "Ste B", "address3":
+        "", "city": "Littleton", "zip_code": "80123", "country": "US", "state": "CO",
+        "display_address": ["5980 S Jellison St", "Ste B", "Littleton, CO 80123"]},
+        "phone": "+17202204007", "display_phone": "(720) 220-4007", "distance": 18172.23973273907},
+        {"id": "YmUtcdHhIC5cBujKytB_9A", "alias": "taco-block-wheat-ridge", "name":
+        "Taco Block", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Si5Tq0KP25hob5pd8dXxiQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taco-block-wheat-ridge?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 5, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
+        {"alias": "tacos", "title": "Tacos"}, {"alias": "catering", "title": "Caterers"}],
+        "rating": 5.0, "coordinates": {"latitude": 39.7769414, "longitude": -105.0707654},
+        "transactions": [], "price": "$", "location": {"address1": "6551 W 44th Ave",
+        "address2": null, "address3": "", "city": "Wheat Ridge", "zip_code": "80033",
+        "country": "US", "state": "CO", "display_address": ["6551 W 44th Ave", "Wheat
+        Ridge, CO 80033"]}, "phone": "+17202615080", "display_phone": "(720) 261-5080",
+        "distance": 8292.161094495026}], "total": 1600, "region": {"center": {"longitude":
+        -104.985798, "latitude": 39.740959}}}'
+  recorded_at: Fri, 30 Dec 2022 23:21:56 GMT
 recorded_with: VCR 6.1.0

@@ -26,28 +26,28 @@ RSpec.describe 'New Itinerary' do
     visit '/itineraries/new?search=denver'
     expect(page).to have_content('Denver Itinerary')
     within '#parks' do
-      expect(page).to have_content('Green Mountain')
-      expect(page).to have_content('Red Rocks')
-      expect(page).to have_content('Indian Creek Loop')
+      expect(page).to have_content('Apex Park')
+      expect(page).to have_content('Bear Creek Regional Park')
+      expect(page).to have_content('Black Forest Regional Park')
     end
 
     within '#restaurants' do
-      expect(page).to have_content("Harley's A Hot Dog Revolution")
-      expect(page).to have_content('Cafe Miriam')
-      expect(page).to have_content('Istanbul Cafe And Bakery')
+      expect(page).to have_content('The Savage Beet')
+      expect(page).to have_content('Your Coffee Guy')
+      expect(page).to have_content('Taco Block')
     end
     click_button('Save')
     expect(page).to have_content('Denver Itinerary')
     within '#parks' do
-      expect(page).to have_content('Green Mountain')
-      expect(page).to have_content('Red Rocks')
-      expect(page).to have_content('Indian Creek Loop')
+      expect(page).to have_content('Apex Park')
+      expect(page).to have_content('Bear Creek Regional Park')
+      expect(page).to have_content('Black Forest Regional Park')
     end
 
     within '#restaurants' do
-      expect(page).to have_content("Harley's A Hot Dog Revolution")
-      expect(page).to have_content('Cafe Miriam')
-      expect(page).to have_content('Istanbul Cafe And Bakery')
+      expect(page).to have_content('The Savage Beet')
+      expect(page).to have_content('Your Coffee Guy')
+      expect(page).to have_content('Taco Block')
     end
     click_on('Itineraries')
     expect(current_path).to eq(itineraries_path)
