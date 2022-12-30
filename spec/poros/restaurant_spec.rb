@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Restaurant do
+RSpec.describe RestaurantPoro do
   before :each do
     @data = {
       "id": 'eCkWoMKHh5PoNqYvdyviRA',
@@ -72,7 +72,7 @@ RSpec.describe Restaurant do
   end
 
   it 'errors gracefully' do
-    bad_restaurant = Restaurant.new({})
+    bad_restaurant = RestaurantPoro.new({})
     expect(bad_restaurant.name).to eq('Not found')
     expect(bad_restaurant.rating).to eq('Not found')
     expect(bad_restaurant.price).to eq('Not found')

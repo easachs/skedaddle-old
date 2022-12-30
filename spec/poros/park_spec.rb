@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Park do
+RSpec.describe ParkPoro do
   before :each do
     @data = {
       "name": 'Green Mountain',
@@ -72,7 +72,7 @@ RSpec.describe Park do
   end
 
   it 'errors gracefully' do
-    bad_park = Park.new({})
+    bad_park = ParkPoro.new({})
     expect(bad_park.name).to eq('Not found')
     expect(bad_park.city).to eq('Not found')
     expect(bad_park.state).to eq('Not found')
