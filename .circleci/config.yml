@@ -51,12 +51,12 @@ workflows:
     jobs:
       - build-and-test
       - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
+          force: true 
+          app-name: skedaddle
+          api-key: HEROKU_API_KEY
+          branch: main
           requires:
             - build-and-test
-          post-steps:
-            - run:
-                name: migrate
-                command: heroku run -a $skedaddle rails db:migrate
           filters:
             branches:
               only:
