@@ -23,7 +23,7 @@ RSpec.describe 'New Itinerary' do
 
   it 'has search location and parks/restaurants displayed', vcr: 'denver_search' do
     expect(current_path).to eq(dashboard_path)
-    visit '/itineraries/new?search=denver'
+    visit '/itineraries/new?search=Denver'
     expect(page).to have_content('Denver Itinerary')
     within '#parks' do
       expect(page).to have_content('Apex Park')

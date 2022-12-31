@@ -48,7 +48,7 @@ class ItinerariesController < ApplicationController
   end
 
   def search
-    @search = itinerary_params[:search].capitalize.delete("'")
+    @search = itinerary_params[:search].delete("'")
   end
 
   def find_parks

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Qweporiuqwpoeruqpweiru
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=qweporiuqwpoeruqpweiru
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:47 GMT
+      - Sat, 31 Dec 2022 02:20:15 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - 66526009-d5c7-4ab6-a60b-77b9e132c079
+      - 5cbe7a61-5458-42cc-9bc3-ee18529a1edf
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,27 +45,27 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24955'
+      - '24920'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '1.382'
+      - '3.903'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wAWnTK2V1Mpk1MK%2BE2q3L4mVLkLN1XO6B2%2BaSr8rC0oEXN9fEEyx4QrU1xwkQX8%2BBGhM0TBNvlADtfraSvF3Pd4XehzlppGIbefCuwzqhznhzLffEYIVnylFpfKMOpECR5Af1hFuTKvxQX3KcKueQ3IVoyE%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=W2NZ9JiQpm5%2Bf6yyIN%2BJFxu%2Bd2szTM0sbSQPPKdDKP6%2B1OIXsCUIR0HZ7wizPlvXSgy5JmM9oH2JgpLSok4GIvBSdcGmYbnJ0y9XUWGQBrWkU5tudChmaxmdx0Evr2x0twWbZ26fe9nEX2nPofvGHf%2BfES4%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78087a5f3a082905-DEN
+      - 781f88d969021f98-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"data":[]}'
-  recorded_at: Wed, 28 Dec 2022 07:10:47 GMT
+  recorded_at: Sat, 31 Dec 2022 02:20:15 GMT
 - request:
     method: get
     uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=badrequest&limit=3&lon=badrequest&radius=100
@@ -87,7 +87,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:47 GMT
+      - Sat, 31 Dec 2022 02:20:15 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -97,15 +97,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Wed, 28 Dec 2022 07:10:47 GMT
+      - Sat, 31 Dec 2022 02:20:15 GMT
       Expires:
-      - Thu, 29 Dec 2022 07:10:47 GMT
+      - Sun, 01 Jan 2023 02:20:15 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
       - '"177f8af5bdc780abe7407a9cae90efcd"'
       Cf-Ray:
-      - 78087a6b18be281c-SEA
+      - 781f88f4cd93c67c-SEA
       Cf-Cache-Status:
       - BYPASS
       Pragma:
@@ -120,7 +120,7 @@ http_interactions:
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=94tx5mFjy3eV8CQbh7jpbYZa1ql6rMKC9%2BcIoHG2Xf%2F0julV4O1ZJN81ud%2BNy4qoKSIaZqgmUwajxyavgKXckdRSMl0Bldarz0XeN3Nw8KJP18bHuBdUgIlyiIA13oEoyk50cD%2Fm"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3a%2Fh6RoVefRASzI%2FXnh3MDT5GY9JzyVRaNsXFQwxkL68mzL5bbEGV9X85MezzfAnXRxX8eY7Z%2BJikmZEq5p7RPNlNT8v4uTTCLyE1bqw%2FSIVNGpeYQ9ItOb%2FxOoI8vYnNn9AmfE2"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -144,13 +144,13 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '73028'
+      - '4060'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '73028'
+      - '4060'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -161,10 +161,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"code":"invalid_input","message":"For geo search, lat, lon, and radius
         must all be non-zero.","data":{"status":404}}'
-  recorded_at: Wed, 28 Dec 2022 07:10:47 GMT
+  recorded_at: Sat, 31 Dec 2022 02:20:15 GMT
 - request:
     method: get
-    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=Qweporiuqwpoeruqpweiru
+    uri: http://api.positionstack.com/v1/forward?access_key=<geocode_api_key>&query=qweporiuqwpoeruqpweiru
     body:
       encoding: US-ASCII
       string: ''
@@ -181,7 +181,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 28 Dec 2022 07:10:49 GMT
+      - Sat, 31 Dec 2022 02:20:19 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -197,7 +197,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - f752e060-90c9-4bdc-894e-5a6316775864
+      - 7e390b6b-c8c4-4475-bc75-191cc7b35e77
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -207,27 +207,27 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24954'
+      - '24919'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '2.036'
+      - '3.451'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kH1LZ1BUhsGJ1R7Ich6%2FKM3Aw6xh0Fh87ExVy1D3gPSxLKUlxQBen9gh1Etkm1i0y34hETwEPd3jrSjtw6vqkbrIlj5b8A3ny%2BOovh5xSA7pm70GswOs%2FDJZJ4wjf9qzGAnB6W%2F7tTfz3W5Wsn6nOJt5qOg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EvvkFvsDMlph49%2FVMRqI%2FMJEsT5ypVU7Leu1pIQV2Wvwum7dMsK%2BW8R87ap6bNFbfs33AIZR9eIcge3RMNpOGn6XpCmb9hBoZpEVxj5CW%2FhPz7BjNMDewRxLl0rmuotHU83%2FLhQgs2pvdWCCuoFJ1QHjPK4%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 78087a6d3d2b8ea8-DEN
+      - 781f88f86cea1f3a-DEN
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
       string: '{"data":[]}'
-  recorded_at: Wed, 28 Dec 2022 07:10:49 GMT
+  recorded_at: Sat, 31 Dec 2022 02:20:19 GMT
 - request:
     method: get
     uri: https://api.yelp.com/v3/businesses/search?category=food&latitude&limit=3&longitude&sort_by=rating
@@ -254,14 +254,14 @@ http_interactions:
       - '111'
       Content-Type:
       - application/json
-      X-B3-Sampled:
-      - '0'
-      X-Routing-Service:
-      - routing-main--uswest2-54c89576fb-r7ggm; site=public_api_v3
       Server:
       - envoy
       X-Zipkin-Id:
-      - 67467cc9a06a3fc5
+      - dde4d9627fa39ed6
+      X-Routing-Service:
+      - routing-main--uswest2-54c89576fb-7rwwg; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
@@ -273,11 +273,11 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 28 Dec 2022 07:10:50 GMT
+      - Sat, 31 Dec 2022 02:20:19 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8245-DEN
+      - cache-den8234-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -286,5 +286,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error": {"code": "VALIDATION_ERROR", "description": "Please specify
         a location or a latitude and longitude"}}'
-  recorded_at: Wed, 28 Dec 2022 07:10:50 GMT
+  recorded_at: Sat, 31 Dec 2022 02:20:19 GMT
 recorded_with: VCR 6.1.0
