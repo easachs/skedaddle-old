@@ -11,12 +11,12 @@ jobs: # a collection of steps
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
-          PGUSER: skedaddlier
+          PGUSER: skedaddle
           RAILS_ENV: test
       - image: circleci/postgres:11 # database image
         environment:
-          POSTGRES_USER: skedaddlier
-          POSTGRES_DB: skedaddlier_test
+          POSTGRES_USER: skedaddle
+          POSTGRES_DB: skedaddle_test
           POSTGRES_PASSWORD:
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
@@ -52,7 +52,7 @@ workflows:
       - build-and-test
       - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
           force: true 
-          app-name: skedaddlier
+          app-name: skedaddle
           api-key: HEROKU_API_KEY
           branch: main
           requires:
