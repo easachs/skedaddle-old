@@ -32,9 +32,8 @@ RSpec.describe 'Show Itinerary' do
       expect(page).to have_content('Apex Park')
       expect(page).to have_content('Bear Creek Regional Park')
       expect(page).to have_content('Black Forest Regional Park')
-      within '#park-2' do
-        click_on('Remove')
-      end
+      click_on('Remove Black Forest Regional Park')
+
       expect(page).to have_content('Apex Park')
       expect(page).to have_content('Bear Creek Regional Park')
       expect(page).to_not have_content('Black Forest Regional Park')
@@ -44,9 +43,8 @@ RSpec.describe 'Show Itinerary' do
       expect(page).to have_content('The Savage Beet')
       expect(page).to have_content('Your Coffee Guy')
       expect(page).to have_content('Taco Block')
-      within '#restaurant-1' do
-        click_on('Remove')
-      end
+      click_on('Remove Your Coffee Guy')
+
       expect(page).to have_content('The Savage Beet')
       expect(page).to_not have_content('Your Coffee Guy')
       expect(page).to have_content('Taco Block')
