@@ -20,9 +20,9 @@
 <br><h1><b><%= "#{@itinerary.search} Itinerary" %></b></h1>
 <br>
 <h3><b>Parks</b></h3><br>
-<div id="parks"><% @itinerary.parks.each do |park| %>
+<div id="parks"><% @itinerary.parks.each_with_index do |park, index| %>
   <div id="right_image"><img id = "image_format" src="<%= park[:thumbnail]%>"></div>
-  <h5><b><%= link_to park[:name], park[:url] %></b></h5>
+  <div id="park-<%= index %>"><h5><b><%= link_to park[:name], park[:url] %></b></h5>
   <p><b>City: </b><%= park[:city] %></p>
   <p><b>State: </b><%= park[:state] %></p>
   <p><b>Country: </b><%= park[:country] %></p>
@@ -30,21 +30,23 @@
   <p><b>Directions: </b><%= truncate(park[:directions], length: 500).remove('&lt;br /&gt;').remove('&lt;').remove('&gt;').remove('&amp;gt;').remove('&amp;lt;br /').remove('&#39;') %></p>
   <p><b>Lat: </b><%= park[:lat] %></p>
   <p><b>Lon: </b><%= park[:lon] %></p>
-  <p><b>Activities: </b><%= park[:activities] %></p><hr>
+  <p><b>Activities: </b><%= park[:activities] %></p>
+  <p><%= button_to 'Remove', park_path(park), method: :delete %></p></div></br><hr>
 <% end %></div>
 
 <h3><b>Restaurants</b></h3><br>
-<div id="restaurants"><% @itinerary.restaurants.each do |restaurant| %>
+<div id="restaurants"><% @itinerary.restaurants.each_with_index do |restaurant, index| %>
   <div id="right_image"><img id = "image_format" src="<%= restaurant[:image_url]%>"></div>
-  <h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
+  <div id="restaurant-<%= index %>"><h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
   <p><b>Rating: </b><%= restaurant[:rating] %></p>
   <p><b>Price: </b><%= restaurant[:price] %></p>
   <p><b>Categories: </b><%= restaurant[:categories] %></p>
   <p><b>Address: </b><%= restaurant[:address] %></p>
-  <p><b>Phone: </b><%= restaurant[:phone] %></p></br><hr>
+  <p><b>Phone: </b><%= restaurant[:phone] %></p>
+  <p><%= button_to 'Remove', restaurant_path(restaurant), method: :delete %><br></p></div></br><hr>
 <% end %></div>
 
-<%= button_to 'Delete', itinerary_path(@itinerary), method: :delete %><br>
+<%= button_to 'Delete Itinerary', itinerary_path(@itinerary), method: :delete %><br>
 
     </div>
   </div>

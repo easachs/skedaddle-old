@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get '/about', to: 'dashboard#about_us'
   get '/contact', to: 'dashboard#contact'
   resources :itineraries, except: %i[edit update]
+
+  resources :parks, only: %i[destroy]
+  resources :restaurants, only: %i[destroy]
 end

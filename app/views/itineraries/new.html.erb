@@ -46,7 +46,7 @@
 
 <%= form_with url: itineraries_path, method: :post, local: true do |f| %>
   <%= f.hidden_field :search, value: @search %>
-  <p><%= f.submit 'Save' %></p>
+  <p><%= f.submit 'Save Itinerary' %></p>
 <% end %>
 <%= button_to 'Search Again', dashboard_path, method: :get %><br>
 
