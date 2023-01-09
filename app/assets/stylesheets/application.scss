@@ -27,7 +27,7 @@
 
 #showimage {
       width: auto;
-      background-image: image-url("mountain.jpg");
+      background-image: image-url("rainforest.jpg");
       height: 100%;
       width: 100%;
       position: fixed;
@@ -91,7 +91,7 @@
   object-fit: contain;
 }
 
-#right_image {
+.align_right {
   float: right;
 }
 
