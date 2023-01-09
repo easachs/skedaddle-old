@@ -21,7 +21,7 @@
 
 <div id="parks"><% @itineraries.each do |itinerary| %>
   <hr><h5><b><%= link_to itinerary.search, itinerary_path(itinerary) %></b>
-  <div id="right_image">created <%= itinerary.created_at.strftime('%m/%d/%y') %></div></h5>
+  <div class="align_right">created <%= itinerary.created_at.strftime('%m/%d/%y') %></div></h5>
 <% end %></div><br>
     </div>
   </div>

@@ -19,32 +19,39 @@
 
 <br><h1><b><%= "#{@itinerary.search} Itinerary" %></b></h1>
 <br>
-<h3><b>Parks</b></h3><br>
-<div id="parks"><% @itinerary.parks.each_with_index do |park, index| %>
-  <div id="right_image"><img id = "image_format" src="<%= park[:thumbnail]%>"></div>
-  <div id="park-<%= index %>"><h5><b><%= link_to park[:name], park[:url] %></b></h5>
-  <p><b>City: </b><%= park[:city] %></p>
-  <p><b>State: </b><%= park[:state] %></p>
-  <p><b>Country: </b><%= park[:country] %></p>
-  <p><b>Description: </b><%= truncate(park[:description], length: 500).remove('&lt;br /&gt;').remove('&lt;').remove('&gt;').remove('&amp;gt;').remove('&amp;lt;br /').remove('&#39;') %></p>
-  <p><b>Directions: </b><%= truncate(park[:directions], length: 500).remove('&lt;br /&gt;').remove('&lt;').remove('&gt;').remove('&amp;gt;').remove('&amp;lt;br /').remove('&#39;') %></p>
-  <p><b>Lat: </b><%= park[:lat] %></p>
-  <p><b>Lon: </b><%= park[:lon] %></p>
-  <p><b>Activities: </b><%= park[:activities] %></p>
-  <p><%= button_to 'Remove', park_path(park), method: :delete %></p></div></br><hr>
-<% end %></div>
 
-<h3><b>Restaurants</b></h3><br>
-<div id="restaurants"><% @itinerary.restaurants.each_with_index do |restaurant, index| %>
-  <div id="right_image"><img id = "image_format" src="<%= restaurant[:image_url]%>"></div>
-  <div id="restaurant-<%= index %>"><h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
-  <p><b>Rating: </b><%= restaurant[:rating] %></p>
-  <p><b>Price: </b><%= restaurant[:price] %></p>
-  <p><b>Categories: </b><%= restaurant[:categories] %></p>
-  <p><b>Address: </b><%= restaurant[:address] %></p>
-  <p><b>Phone: </b><%= restaurant[:phone] %></p>
-  <p><%= button_to 'Remove', restaurant_path(restaurant), method: :delete %><br></p></div></br><hr>
-<% end %></div>
+<% if @itinerary.parks.count > 0 %>
+  <div id="parks"><h3><b>Parks</b></h3><br>
+  <% @itinerary.parks.each_with_index do |park, index| %>
+    <% if park[:thumbnail] != 'Not found' %>
+      <div class="align_right"><img id = "image_format" src="<%= park[:thumbnail] %>"></div>
+    <% end %>
+    <div id="park-<%= index %>"><h5><b><%= link_to park[:name], park[:url] %></b></h5>
+    <p><b>Location: </b><%= park[:city] %>, <%= "#{park[:state]}, " if park[:state] != 'All' && park[:state] != 'Not found' %><%= park[:country] %></p>
+    <p><b>Description: </b><%= truncate(park[:description], length: 1000) %></p>
+    <p><b>Directions: </b><%= park[:directions] %></p>
+    <p><b>Lat: </b><%= park[:lat] %></p>
+    <p><b>Lon: </b><%= park[:lon] %></p>
+    <p><b>Activities: </b><%= park[:activities] %></p>
+    <p><%= button_to "Remove #{park[:name]}", park_path(park), method: :delete %></p></div><hr>
+  <% end %></div>
+<% end %>
+
+<% if @itinerary.restaurants.count > 0 %>
+  <div id="restaurants"><h3><b>Restaurants</b></h3><br>
+  <% @itinerary.restaurants.each_with_index do |restaurant, index| %>
+    <% if restaurant[:image_url] != 'Not found' %>
+      <div class="align_right"><img id = "image_format" src="<%= restaurant[:image_url]%>"></div>
+    <% end %>
+    <div id="restaurant-<%= index %>"><h5><b><%= link_to restaurant[:name], restaurant[:url] %></b></h5></p>
+    <p><b>Rating: </b><%= restaurant[:rating] %></p>
+    <p><b>Price: </b><%= restaurant[:price] %></p>
+    <p><b>Categories: </b><%= restaurant[:categories] %></p>
+    <p><b>Location: </b><%= restaurant[:address] %></p>
+    <p><b>Phone: </b><%= restaurant[:phone] %></p>
+    <p><%= button_to "Remove #{restaurant[:name]}", restaurant_path(restaurant), method: :delete %></p></div><hr>
+  <% end %></div>
+<% end %>
 
 <%= button_to 'Delete Itinerary', itinerary_path(@itinerary), method: :delete %><br>
 
