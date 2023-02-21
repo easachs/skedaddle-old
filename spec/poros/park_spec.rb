@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe ParkPoro do
-  before :each do
+  before do
     @data = {
       "name": 'Green Mountain',
       "city": 'Denver',

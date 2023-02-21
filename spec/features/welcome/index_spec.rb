@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Welcome Page' do
-  before(:each) do
+  before do
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
       { 'provider' => 'google_oauth2',

@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Show Itinerary' do
-  before(:each) do
+  before do
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
       { 'provider' => 'google_oauth2',
@@ -22,7 +22,7 @@ RSpec.describe 'Show Itinerary' do
   end
 
   it 'can delete parks and restaurants', vcr: 'denver_search' do
-    expect(current_path).to eq(dashboard_path)
+    expect(page).to have_current_path(dashboard_path, ignore_query: true)
     visit '/itineraries/new?search=Denver'
     expect(page).to have_content('Denver Itinerary')
     click_button('Save')
@@ -36,7 +36,7 @@ RSpec.describe 'Show Itinerary' do
 
       expect(page).to have_content('Apex Park')
       expect(page).to have_content('Bear Creek Regional Park')
-      expect(page).to_not have_content('Black Forest Regional Park')
+      expect(page).not_to have_content('Black Forest Regional Park')
     end
 
     within '#restaurants' do
@@ -46,7 +46,7 @@ RSpec.describe 'Show Itinerary' do
       click_on('Remove Your Coffee Guy')
 
       expect(page).to have_content('The Savage Beet')
-      expect(page).to_not have_content('Your Coffee Guy')
+      expect(page).not_to have_content('Your Coffee Guy')
       expect(page).to have_content('Taco Block')
     end
   end

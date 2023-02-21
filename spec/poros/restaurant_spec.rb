@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe RestaurantPoro do
-  before :each do
+  before do
     @data = {
       "id": 'eCkWoMKHh5PoNqYvdyviRA',
       "alias": 'spinellis-market-denver-3',

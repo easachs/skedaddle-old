@@ -2,6 +2,13 @@
 
 class DashboardController < ApplicationController
   before_action :not_logged_in
+  skip_before_action :not_logged_in, only: [:index]
+
+  def index
+    redirect_to dashboard_path if current_user
+    @user_count = User.count
+    @itin_count = Itinerary.count
+  end
 
   def show; end
 
