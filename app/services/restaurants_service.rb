@@ -4,7 +4,7 @@ class RestaurantsService
   def self.restaurants_near(location)
     geocode = GeocodeFacade.geocode_for(location)
     response = conn.get('search') do |route|
-      route.params['limit'] = '3'
+      route.params['limit'] = '5'
       route.params['latitude'] = geocode[:lat]
       route.params['longitude'] = geocode[:lon]
       route.params['sort_by'] = 'rating'

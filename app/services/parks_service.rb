@@ -4,7 +4,7 @@ class ParksService
   def self.parks_near(location)
     geocode = GeocodeFacade.geocode_for(location)
     response = conn.get('/activity/') do |route|
-      route.params['limit'] = '3'
+      route.params['limit'] = '5'
       route.params['lat'] = nil_check(geocode[:lat])
       route.params['lon'] = nil_check(geocode[:lon])
       route.params['radius'] = '100'
